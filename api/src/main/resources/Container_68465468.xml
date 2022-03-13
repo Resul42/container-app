@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<container xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <id>68465468</id>
+  <shippingDate>2016-07-22T00:00:00+02:00</shippingDate>
+  <parcels>
+    <parcel>
+      <receipient>
+        <name>Vinny Gankema</name>
+        <address>
+          <street>Marijkestraat</street>
+          <houseNumber>28</houseNumber>
+          <postalCode>4744AT</postalCode>
+          <city>Bosschenhoofd</city>
+        </address>
+      </receipient>
+      <weight>0.02</weight>
+      <value>0.0</value>
+    </parcel>
+    <parcel>
+      <receipient>
+        <name>Soner Colen</name>
+        <address>
+          <street>Meester Willemstraat</street>
+          <houseNumber>111</houseNumber>
+          <postalCode>3036MN</postalCode>
+          <city>Rotterdam</city>
+        </address>
+      </receipient>
+      <weight>2.0</weight>
+      <value>0.0</value>
+    </parcel>
+    <parcel>
+      <receipient>
+        <name>Ricardus Proper</name>
+        <address>
+          <street>Nieuwstraat</street>
+          <houseNumber>115</houseNumber>
+          <postalCode>4724BE</postalCode>
+          <city>Wouw</city>
+        </address>
+      </receipient>
+      <weight>100.0</weight>
+      <value>2000.0</value>
+    </parcel>
+    <parcel>
+      <receipient>
+        <name>Alvaro ten Cate</name>
+        <address>
+          <street>Hoofdstraat</street>
+          <houseNumber>97</houseNumber>
+          <postalCode>9801BZ</postalCode>
+          <city>Zuidhorn</city>
+        </address>
+      </receipient>
+      <weight>11</weight>
+      <value>500</value>
+    </parcel>
+    <parcel>
+      <receipient>
+        <name>Roland Lubben</name>
+        <address>
+          <street>Willem Bontekoestraat</street>
+          <houseNumber>43</houseNumber>
+          <postalCode>1212BZ</postalCode>
+          <city>Hilversum</city>
+        </address>
+      </receipient>
+      <weight>3.0</weight>
+      <value>0</value>
+    </parcel>
+    <parcel>
+      <receipient>
+        <name>Ninon Spanjersberg</name>
+        <address>
+          <street>Overmaat</street>
+          <houseNumber>115</houseNumber>
+          <postalCode>7524PB</postalCode>
+          <city>Enschede</city>
+        </address>
+      </receipient>
+      <weight>10.0</weight>
+      <value>1500</value>
+    </parcel>
+    <parcel>
+      <receipient>
+        <name>Ninon Spanjersberg</name>
+        <address>
+          <street>Overmaat</street>
+          <houseNumber>115</houseNumber>
+          <postalCode>7524PB</postalCode>
+          <city>Enschede</city>
+        </address>
+      </receipient>
+      <weight>10.0</weight>
+      <value>1500</value>
+    </parcel>
+    <parcel>
+      <receipient>
+        <name>Montana Martinus</name>
+        <address>
+          <street>Salamander</street>
+          <houseNumber>147</houseNumber>
+          <postalCode>3831ZA</postalCode>
+          <city>Leusden</city>
+        </address>
+      </receipient>
+      <weight>0.7</weight>
+      <value>0</value>
+    </parcel>
+    <parcel>
+      <receipient>
+        <name>Aisling Kruizenga</name>
+        <address>
+          <street>Oleanderlaan</street>
+          <houseNumber>17</houseNumber>
+          <postalCode>8024XC</postalCode>
+          <city>Zwolle</city>
+        </address>
+      </receipient>
+      <weight>0.9</weight>
+      <value>1100</value>
+    </parcel>
+    <parcel>
+      <receipient>
+        <name>Bernadet Spijker</name>
+        <address>
+          <street>Paul Krugerstraat</street>
+          <houseNumber>1</houseNumber>
+          <postalCode>4443RC</postalCode>
+          <city>Nisse</city>
+        </address>
+      </receipient>
+      <weight>4.5</weight>
+      <value>0</value>
+    </parcel>
+    <parcel>
+      <receipient>
+        <name>Collin Slaman</name>
+        <address>
+          <street>Schoolstraat</street>
+          <houseNumber>84</houseNumber>
+          <postalCode>9581GD</postalCode>
+          <city>Musselkanaal</city>
+        </address>
+      </receipient>
+      <weight>120</weight>
+      <value>1500</value>
+    </parcel>
+    <parcel>
+      <receipient>
+        <name>Collin Slaman</name>
+        <address>
+          <street>Berkengaarde</street>
+          <houseNumber>176</houseNumber>
+          <postalCode>2742TS</postalCode>
+          <city>Waddinxveen</city>
+        </address>
+      </receipient>
+      <weight>130</weight>
+      <value>2000</value>
+    </parcel>
+    <parcel>
+      <receipient>
+        <name>Ingetje Hauwert</name>
+        <address>
+          <street>Berkengaarde</street>
+          <houseNumber>176</houseNumber>
+          <postalCode>2742TS</postalCode>
+          <city>Waddinxveen</city>
+        </address>
+      </receipient>
+      <weight>0.3</weight>
+      <value>0</value>
+    </parcel>
+    <parcel>
+      <receipient>
+        <name>Amber van der Schaar</name>
+        <address>
+          <street>Hoofdweg</street>
+          <houseNumber>68</houseNumber>
+          <postalCode>9765CN</postalCode>
+          <city>Paterswolde</city>
+        </address>
+      </receipient>
+      <weight>1</weight>
+      <value>0</value>
+    </parcel>
+    <parcel>
+      <receipient>
+        <name>Willemtje Guldemond</name>
+        <address>
+          <street>Ringspoor</street>
+          <houseNumber>30</houseNumber>
+          <postalCode>2908BD</postalCode>
+          <city>Capelle aan den IJssel</city>
+        </address>
+      </receipient>
+      <weight>15</weight>
+      <value>100</value>
+    </parcel>
+    <parcel>
+      <receipient>
+        <name>Willemtje Guldemond</name>
+        <address>
+          <street>Ringspoor</street>
+          <houseNumber>30</houseNumber>
+          <postalCode>2908BD</postalCode>
+          <city>Capelle aan den IJssel</city>
+        </address>
+      </receipient>
+      <weight>15</weight>
+      <value>100</value>
+    </parcel>
+    <parcel>
+      <receipient>
+        <name>Zeki Soekhai</name>
+        <address>
+          <street>Duivenstraat</street>
+          <houseNumber>125</houseNumber>
+          <postalCode>4711KA</postalCode>
+          <city>Sint Willebrord</city>
+        </address>
+      </receipient>
+      <weight>0.4</weight>
+      <value>0</value>
+    </parcel>
+  </parcels>
+</container>

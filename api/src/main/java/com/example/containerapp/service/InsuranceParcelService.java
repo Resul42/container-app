@@ -24,7 +24,7 @@ public class InsuranceParcelService implements ParcelService{
                 .orElseThrow(() -> ContainerNotFoundException.forId(containerId));
 
         return container.getParcels().stream()
-                .filter(parcel -> parcel.getValue() > 1000 && !parcel.isSignedByInsurance())
+                .filter(parcel -> parcel.getValue() > 1000)
                 .collect(Collectors.toList());
     }
 

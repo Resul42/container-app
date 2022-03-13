@@ -23,8 +23,6 @@ public class XMLDeserializationBean {
 
     @PostConstruct
     public void init() throws IOException {
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.registerModule(new JSR310Module());
 
         try (final InputStream inputStream = new ClassPathResource("Container_68465468.xml").getInputStream()) {
             JacksonXmlModule xmlModule = new JacksonXmlModule();

@@ -1,0 +1,43 @@
+<div flex layout-fill>
+    <h1 class="filter">Parcels</h1>
+    <div class="certificate-table mat-elevation-z8">
+  
+      <table [dataSource]="dataSource" class="mat-table-class" mat-table matSort>
+        <ng-container matColumnDef="id">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>ID</mat-header-cell>
+          <mat-cell *matCellDef="let parcels">{{ parcels.id }}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="receipient">
+          <mat-header-cell *matHeaderCellDef>Receipient</mat-header-cell>
+          <mat-cell *matCellDef="let parcels">{{ parcels.receipient.name}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="weight">
+            <mat-header-cell *matHeaderCellDef>Weight</mat-header-cell>
+            <mat-cell *matCellDef="let parcels">{{ parcels.weight}}</mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="value">
+            <mat-header-cell *matHeaderCellDef>Value</mat-header-cell>
+            <mat-cell *matCellDef="let parcels">{{ parcels.value}}</mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="handled">
+            <mat-header-cell *matHeaderCellDef>Handled</mat-header-cell>
+            <mat-cell *matCellDef="let parcels"> {{parcels.handled ? '&#10003;' : '&#10005;'}} </mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="signedByInsurance">
+            <mat-header-cell *matHeaderCellDef>Signed by Insurance</mat-header-cell>
+            <mat-cell *matCellDef="let parcels"> {{parcels.signedByInsurance ? '&#10003;' : '&#10005;'}} </mat-cell>
+          </ng-container>
+  
+        <ng-container matColumnDef="handle">
+          <mat-header-cell *matHeaderCellDef>Handle parcel</mat-header-cell>
+          <mat-cell (click)="$event.stopPropagation()" *matCellDef="let parcels">
+            <button (click)="handle(parcels)" mat-button color="primary">Handle</button>
+          </mat-cell>
+        </ng-container>
+  
+        <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+      </table>
+    </div>
+  </div>
+  

@@ -1,6 +1,5 @@
 package com.example.containerapp.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
@@ -24,7 +23,6 @@ public class Container {
     @JacksonXmlProperty(localName = "shippingDate")
     private String shippingDate; //Was working on making @XmlJavaTypeAdapter(LocalDateTimeAdapter.class) on XMLGregorianCalendar but had some issues with jsr310. Was going to comeback to this later.
     @JacksonXmlElementWrapper(localName = "parcels")
-    @JsonIgnore
     private List<Parcel> parcels = new ArrayList<>();
 
 }

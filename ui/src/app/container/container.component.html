@@ -1,0 +1,28 @@
+<div flex layout-fill>
+    <h1 class="filter">Containers</h1>
+    <div class="co-table mat-elevation-z8">
+  
+      <table [dataSource]="dataSource" class="mat-table-class" mat-table matSort>
+        <ng-container matColumnDef="id">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>Container ID</mat-header-cell>
+          <mat-cell *matCellDef="let containers">{{ containers.id }}</mat-cell>
+        </ng-container>
+  
+        <ng-container matColumnDef="shippingDate">
+          <mat-header-cell *matHeaderCellDef>Shipping Date</mat-header-cell>
+          <mat-cell *matCellDef="let containers">{{ containers.shippingDate}}</mat-cell>
+        </ng-container>
+  
+        <ng-container matColumnDef="actions">
+          <mat-header-cell *matHeaderCellDef>Select Container</mat-header-cell>
+          <mat-cell (click)="$event.stopPropagation()" *matCellDef="let containers">
+            <button (click)="select(containers)" mat-button color="primary">Select Container</button>
+          </mat-cell>
+        </ng-container>
+  
+        <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+      </table>
+    </div>
+  </div>
+  

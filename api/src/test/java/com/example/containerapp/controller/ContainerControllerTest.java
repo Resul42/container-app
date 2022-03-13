@@ -105,7 +105,7 @@ class ContainerControllerTest {
 
     @Test
     @WithMockUser(authorities = "USER")
-    void testRetrieveParcelsInsuranceNotSigned() throws Exception {
+    void testRetrieveParcelsInsurance() throws Exception {
         when(containerRepository.findById("12345")).thenReturn(Optional.of(container()));
         when(userRepository.findByEmail(any())).thenReturn(Optional.of(userInsurance()));
         mockMvc.perform(get("/api/containers/12345"))
@@ -118,7 +118,16 @@ class ContainerControllerTest {
                 .andExpect(jsonPath("$[0].receipient.name", is("test user heavy")))
                 .andExpect(jsonPath("$[0].receipient.address.houseNumber", is(12)))
                 .andExpect(jsonPath("$[0].receipient.address.postalCode", is("1122FF")))
-                .andExpect(jsonPath("$[0].receipient.address.street", is("newstreet")));
+                .andExpect(jsonPath("$[0].receipient.address.street", is("newstreet")))
+                .andExpect(jsonPath("$[1].id", is("6789")))
+                .andExpect(jsonPath("$[1].value", is(1300.0)))
+                .andExpect(jsonPath("$[1].weight", is(170.0)))
+                .andExpect(jsonPath("$[1].handled", is(false)))
+                .andExpect(jsonPath("$[1].signedByInsurance", is(true)))
+                .andExpect(jsonPath("$[1].receipient.name", is("test user heavy")))
+                .andExpect(jsonPath("$[1].receipient.address.houseNumber", is(12)))
+                .andExpect(jsonPath("$[1].receipient.address.postalCode", is("1122FF")))
+                .andExpect(jsonPath("$[1].receipient.address.street", is("newstreet")));
     }
 
     @Test
